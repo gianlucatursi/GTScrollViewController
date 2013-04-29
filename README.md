@@ -61,7 +61,7 @@ Play with it and ask me whatever you want.
 
 ## Contact
 Gianluca Tursi
-- (http://www.gianlucatursi.com)[http://www.gianlucatursi.com]
-- (http://twitter.com/gianlucatursi)[http://twitter.com/gianlucatursi]
-- (gian.tursi@gmail.com)[mailto:gian.tursi@gmail.com]
-- (info@gianlucatursi.com)[mailto:info@gianlucatursi.com]
+- [http://www.gianlucatursi.com](http://www.gianlucatursi.com)
+- [http://twitter.com/gianlucatursi](http://twitter.com/gianlucatursi)
+- [gian.tursi@gmail.com](mailto:gian.tursi@gmail.com)
+- [info@gianlucatursi.com](mailto:info@gianlucatursi.com)
