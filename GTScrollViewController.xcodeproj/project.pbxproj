@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5648A8F172EE9C80025C1D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5648A8E172EE9C80025C1D1 /* UIKit.framework */; };
+		C5648A91172EE9C80025C1D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5648A90172EE9C80025C1D1 /* Foundation.framework */; };
+		C5648A93172EE9C80025C1D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5648A92172EE9C80025C1D1 /* CoreGraphics.framework */; };
+		C5648A99172EE9C80025C1D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5648A97172EE9C80025C1D1 /* InfoPlist.strings */; };
+		C5648A9B172EE9C80025C1D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5648A9A172EE9C80025C1D1 /* main.m */; };
+		C5648A9F172EE9C80025C1D1 /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5648A9E172EE9C80025C1D1 /* GTAppDelegate.m */; };
+		C5648AA1172EE9C80025C1D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C5648AA0172EE9C80025C1D1 /* Default.png */; };
+		C5648AA3172EE9C80025C1D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5648AA2172EE9C80025C1D1 /* Default@2x.png */; };
+		C5648AA5172EE9C80025C1D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5648AA4172EE9C80025C1D1 /* Default-568h@2x.png */; };
+		C5648AAC172EEA1F0025C1D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5648AAB172EEA1F0025C1D1 /* QuartzCore.framework */; };
+		C5648AAF172EEA340025C1D1 /* GTScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5648AAE172EEA340025C1D1 /* GTScrollViewController.m */; };
+		C5648AB1172EEAC90025C1D1 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = C5648AB0172EEAC90025C1D1 /* texture.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5648A8B172EE9C80025C1D1 /* GTScrollViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTScrollViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5648A8E172EE9C80025C1D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C5648A90172EE9C80025C1D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5648A92172EE9C80025C1D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C5648A96172EE9C80025C1D1 /* GTScrollViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTScrollViewController-Info.plist"; sourceTree = "<group>"; };
+		C5648A98172EE9C80025C1D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5648A9A172EE9C80025C1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5648A9C172EE9C80025C1D1 /* GTScrollViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTScrollViewController-Prefix.pch"; sourceTree = "<group>"; };
+		C5648A9D172EE9C80025C1D1 /* GTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GTAppDelegate.h; path = GTScrollViewController/GTAppDelegate.h; sourceTree = "<group>"; };
+		C5648A9E172EE9C80025C1D1 /* GTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GTAppDelegate.m; path = GTScrollViewController/GTAppDelegate.m; sourceTree = "<group>"; };
+		C5648AA0172EE9C80025C1D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C5648AA2172EE9C80025C1D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C5648AA4172EE9C80025C1D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C5648AAB172EEA1F0025C1D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C5648AAD172EEA340025C1D1 /* GTScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTScrollViewController.h; sourceTree = "<group>"; };
+		C5648AAE172EEA340025C1D1 /* GTScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTScrollViewController.m; sourceTree = "<group>"; };
+		C5648AB0172EEAC90025C1D1 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5648A88172EE9C80025C1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5648AAC172EEA1F0025C1D1 /* QuartzCore.framework in Frameworks */,
+				C5648A8F172EE9C80025C1D1 /* UIKit.framework in Frameworks */,
+				C5648A91172EE9C80025C1D1 /* Foundation.framework in Frameworks */,
+				C5648A93172EE9C80025C1D1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5648A82172EE9C80025C1D1 = {
+			isa = PBXGroup;
+			children = (
+				C5648A94172EE9C80025C1D1 /* GTScrollViewController */,
+				C5648A9D172EE9C80025C1D1 /* GTAppDelegate.h */,
+				C5648A9E172EE9C80025C1D1 /* GTAppDelegate.m */,
+				C5648A95172EE9C80025C1D1 /* Supporting Files */,
+				C5648A8D172EE9C80025C1D1 /* Frameworks */,
+				C5648A8C172EE9C80025C1D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5648A8C172EE9C80025C1D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5648A8B172EE9C80025C1D1 /* GTScrollViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5648A8D172EE9C80025C1D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5648AAB172EEA1F0025C1D1 /* QuartzCore.framework */,
+				C5648A8E172EE9C80025C1D1 /* UIKit.framework */,
+				C5648A90172EE9C80025C1D1 /* Foundation.framework */,
+				C5648A92172EE9C80025C1D1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5648A94172EE9C80025C1D1 /* GTScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5648AAD172EEA340025C1D1 /* GTScrollViewController.h */,
+				C5648AAE172EEA340025C1D1 /* GTScrollViewController.m */,
+			);
+			path = GTScrollViewController;
+			sourceTree = "<group>";
+		};
+		C5648A95172EE9C80025C1D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5648AB0172EEAC90025C1D1 /* texture.png */,
+				C5648A96172EE9C80025C1D1 /* GTScrollViewController-Info.plist */,
+				C5648A97172EE9C80025C1D1 /* InfoPlist.strings */,
+				C5648A9A172EE9C80025C1D1 /* main.m */,
+				C5648A9C172EE9C80025C1D1 /* GTScrollViewController-Prefix.pch */,
+				C5648AA0172EE9C80025C1D1 /* Default.png */,
+				C5648AA2172EE9C80025C1D1 /* Default@2x.png */,
+				C5648AA4172EE9C80025C1D1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = GTScrollViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5648A8A172EE9C80025C1D1 /* GTScrollViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5648AA8172EE9C80025C1D1 /* Build configuration list for PBXNativeTarget "GTScrollViewController" */;
+			buildPhases = (
+				C5648A87172EE9C80025C1D1 /* Sources */,
+				C5648A88172EE9C80025C1D1 /* Frameworks */,
+				C5648A89172EE9C80025C1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTScrollViewController;
+			productName = GTScrollViewController;
+			productReference = C5648A8B172EE9C80025C1D1 /* GTScrollViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5648A83172EE9C80025C1D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gianluca Tursi";
+			};
+			buildConfigurationList = C5648A86172EE9C80025C1D1 /* Build configuration list for PBXProject "GTScrollViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C5648A82172EE9C80025C1D1;
+			productRefGroup = C5648A8C172EE9C80025C1D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5648A8A172EE9C80025C1D1 /* GTScrollViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5648A89172EE9C80025C1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5648A99172EE9C80025C1D1 /* InfoPlist.strings in Resources */,
+				C5648AA1172EE9C80025C1D1 /* Default.png in Resources */,
+				C5648AA3172EE9C80025C1D1 /* Default@2x.png in Resources */,
+				C5648AA5172EE9C80025C1D1 /* Default-568h@2x.png in Resources */,
+				C5648AB1172EEAC90025C1D1 /* texture.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5648A87172EE9C80025C1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5648A9B172EE9C80025C1D1 /* main.m in Sources */,
+				C5648A9F172EE9C80025C1D1 /* GTAppDelegate.m in Sources */,
+				C5648AAF172EEA340025C1D1 /* GTScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5648A97172EE9C80025C1D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5648A98172EE9C80025C1D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5648AA6172EE9C80025C1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5648AA7172EE9C80025C1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5648AA9172EE9C80025C1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTScrollViewController/GTScrollViewController-Prefix.pch";
+				INFOPLIST_FILE = "GTScrollViewController/GTScrollViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C5648AAA172EE9C80025C1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTScrollViewController/GTScrollViewController-Prefix.pch";
+				INFOPLIST_FILE = "GTScrollViewController/GTScrollViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5648A86172EE9C80025C1D1 /* Build configuration list for PBXProject "GTScrollViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5648AA6172EE9C80025C1D1 /* Debug */,
+				C5648AA7172EE9C80025C1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5648AA8172EE9C80025C1D1 /* Build configuration list for PBXNativeTarget "GTScrollViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5648AA9172EE9C80025C1D1 /* Debug */,
+				C5648AAA172EE9C80025C1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5648A83172EE9C80025C1D1 /* Project object */;
+}
