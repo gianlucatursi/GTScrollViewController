@@ -12,19 +12,19 @@ Include in your project the class `GTScrollViewController.h` and `GTScrollViewCo
 
 `#import "GTScrollViewController.h"`
 
-Now create your `GTScrollView` and add your custom view:
+Now create your `GTScrollViewController` and add your custom view:
 
 	GTScrollViewController *scroller = [[GTScrollViewController alloc] init:nil]; 
 
     [scroller addViews:[[NSArray alloc] initWithObjects:first,second,... nil]]; 
 
-or init `GTScrollView` with the `NSArray` of your custom view:
+or init `GTScrollViewController` with the `NSArray` of your custom view:
 
     GTScrollViewController *scroller = [[GTScrollViewController alloc] init: [[NSArray alloc] initWithObjects:first,second,... nil]];
 
 	[scroller addViews:[[NSArray alloc] initWithObjects:first,second,... nil]]; 
 
-or init `GTScrollView` with the `NSArray` of your custom view:
+or init `GTScrollViewController` with the `NSArray` of your custom view:
 
 	GTScrollViewController *scroller = [[GTScrollViewController alloc] init: [[NSArray alloc] initWithObjects:first,second,... nil]];
 
