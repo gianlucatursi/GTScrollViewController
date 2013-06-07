@@ -11,7 +11,7 @@
 
 @interface GTScrollViewController : UIViewController
 
-@property (strong, nonatomic)NSArray *myViews;
+@property (strong, nonatomic)NSMutableArray *myViews;
 @property float paddingTopBottom;
 @property float paddingLeftRight;
 @property float cornerRadius;

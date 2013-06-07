@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface GTAppDelegate : UIResponder <UIApplicationDelegate>
+#import "GTScrollViewController.h"
+@interface GTAppDelegate : UIResponder <UIApplicationDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *nav;
+@property (strong, nonatomic) GTScrollViewController *scroller;
 
 @end

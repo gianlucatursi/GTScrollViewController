@@ -7,12 +7,13 @@
 //
 
 #import "GTAppDelegate.h"
-#import "GTScrollViewController.h"
 
 @implementation GTAppDelegate
+@synthesize nav,scroller;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     // Two view with label for Demo app
     // IMPORTANT: x and y are calculate automatically
     UIView *first = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
@@ -37,23 +38,49 @@
     [second addSubview:lbl];
 
     /* Init the ScrollController with top and bottom padding = 10*/
-    GTScrollViewController *scroller = [[GTScrollViewController alloc] init:nil andPaddingTopBottom:10];
+    scroller = [[GTScrollViewController alloc] init:nil andPaddingTopBottom:10];
     /* set shadowRadius, opacity and cornerRadius for any view */
     [scroller setShadowRadius:3 shadowOpacity:0.5 andCornerRadius:2];
     /* add all view */
-    [scroller addViews:[[NSArray alloc] initWithObjects:first,second, nil]];
+    [scroller addViews:[[NSArray alloc] initWithObjects: first,second, nil]];
     /* set background image */
+
     [scroller setBackgroundImage:[UIImage imageNamed:@"texture.png"]];
-    
     /* for add other view:
-     
+
     [scroller addView:newView];
      */
+    nav = [[UINavigationController alloc] initWithRootViewController:scroller];
+
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithTitle:@"Add view" style:UIBarButtonItemStyleBordered target:self action:@selector(aggiungi:)];
+    
+    [scroller.navigationItem setRightBarButtonItem:right animated:NO];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window setRootViewController:scroller];
+    [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+-(IBAction)aggiungi:(id)sender{
+    
+    UIView *third = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 50)];
+    
+    UILabel *lbl = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 300, 50)];
+    
+    [third setBackgroundColor:[UIColor brownColor]];
+    lbl = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 300, 50)];
+    [lbl setText:@"3"];
+    [lbl setTextAlignment:NSTextAlignmentCenter];
+    [lbl setBackgroundColor:[UIColor clearColor]];
+    [lbl setFont:[UIFont boldSystemFontOfSize:50]];
+    [lbl setTextColor:[UIColor whiteColor]];
+    [third addSubview:lbl];
+    
+    [scroller addView:third];
+    third = nil;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

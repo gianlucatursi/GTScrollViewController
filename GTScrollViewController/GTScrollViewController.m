@@ -28,14 +28,15 @@
     return [self init:views andPaddingTopBottom:10];
 }
 
--(id)init:(NSArray *)views andPaddingTopBottom:(float)padTB{
+-(id)init:(NSMutableArray *)views andPaddingTopBottom:(float)padTB{
     if(self){
         // init the scroll view with default parameter
         scroll = [[UIScrollView alloc] init];
         [scroll setContentSize:CGSizeMake(320, 900)];
         [scroll setScrollEnabled:YES];
         [scroll setBackgroundColor:[UIColor greenColor]];
-        
+        [scroll setShowsVerticalScrollIndicator:NO];
+        [scroll setShowsHorizontalScrollIndicator:NO];
         [self setView:scroll];
         [self setMyViews:views];
         [self setPaddingLeftRight:10];
@@ -65,16 +66,21 @@
 }
 // add single view
 -(void)addView:(UIView *)view{
-
+    
     // get last view in subviews
+
     UIView *lastView = [self.view.subviews lastObject];
+    myViews = [[NSMutableArray alloc] initWithArray:self.view.subviews];
+    
     // this is the new position, if view ara GCRectMake(0,0,...)
     // otherwise the new position is y + GCRectMake(0,0,...) y value
-    
+    NSLog(@"Count : %d", [self.view.subviews count]);
     float y = lastView.frame.origin.y+lastView.frame.size.height+paddingTopBottom;
+    if(lastView == nil)
+        y = 10;
 
     CGRect frame = view.frame;
-    frame.origin.y += y;
+    frame.origin.y = y;
     frame.origin.x = paddingLeftRight;
     view.frame = frame;
     
@@ -90,21 +96,22 @@
     }
     
     // if the new view exceeds the view of scroller I must resize scroller. 
-    if((frame.origin.y + view.frame.size.height) >= self.view.frame.size.height){
+    if((view.frame.origin.y + view.frame.size.height) >= self.view.frame.size.height){
 
         // the new height
-        float newHeight = self.view.frame.size.height+frame.origin.y+view.frame.size.height+paddingTopBottom;
+        float newHeight = view.frame.origin.y+view.frame.size.height+paddingTopBottom;
         
         [self.scroll setContentSize:
          CGSizeMake(self.view.frame.size.width, newHeight)];
     }
     // add subview
-    [self.view addSubview:view];
 
+    [self.view addSubview:view];
+    
 }
 
 -(void)setBackgroundImage:(UIImage *)image{
-    // change background 
+    // change background
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 

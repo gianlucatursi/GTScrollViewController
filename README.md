@@ -5,7 +5,7 @@ You need a table but with the dynamic view like Facebook home?
 GTScrollView allows you to dynamically add unlimited views.
 Every view will be placed correctly in order after the last view added.
 
-![image](GTScrollViewController/image/1.png)![image](GTScrollViewController/image/2.png)
+![image](GTScrollViewController/image/GTScrollerViewController.gif)
 
 ## Usage
 Include in your project the class `GTScrollViewController.h` and `GTScrollViewController.m` and import:
